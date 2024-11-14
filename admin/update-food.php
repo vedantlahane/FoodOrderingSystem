@@ -247,7 +247,7 @@
                 
 
                 //4. Update the Food in Database
-                $sql3 = "UPDATE tbl_food SET 
+                $sql3 = "UPDATE food_table SET 
                     title = '$title',
                     description = '$description',
                     price = $price,

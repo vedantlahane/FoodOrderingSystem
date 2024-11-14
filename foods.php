@@ -73,8 +73,15 @@
                                 </p>
                                 <br>
 
-                                <a href="<?php echo SITEURL; ?>order.php?food_id=<?php echo $id; ?>" class="btn btn-primary">Order Now</a>
-                            </div>
+                                <form action="<?php echo SITEURL; ?>order.php" method="GET">
+                                    <input type="hidden" name="food_id" value="<?php echo $id; ?>">
+                                    <select name="order_type" class="btn btn-primary">
+                                        <option value="dine_in">Dine In</option>
+                                        <option value="delivery">Delivery</option>
+                                        <option value="pick_up">Pick Up</option>
+                                    </select>
+                                    <input type="submit" value="Order Now" class="btn btn-primary">
+                                </form>     </div>
                         </div>
 
                         <?php

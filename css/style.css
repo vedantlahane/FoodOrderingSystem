@@ -30,6 +30,8 @@
 }
 .text-left{
     text-align: left;
+    padding-left: 5%;
+    font-weight: bold;
 }
 .text-white{
     color: white;
@@ -76,8 +78,13 @@ h3{
 }
 .float-text{
     position: absolute;
-    bottom: 50px;
-    left: 40%;
+    bottom: 1px;
+    height: 50px;
+    padding-top: 10px;
+    /* left: 35%; */
+    width: 100%;
+    background-color: rgba(170, 202, 242, 0.2);
+    backdrop-filter: blur(1px);
 }
 fieldset{
     border: 1px solid white;
@@ -98,9 +105,15 @@ fieldset{
 
 /* CSSS for navbar section */
 
+.navbar{
+    background-color: rgba(170, 202, 242, 0.2);
+    backdrop-filter:blur(1px);
+    /* padding: %; */
+}
 .logo{
     width: 10%;
     float: left;
+
 }
 .menu{
     line-height: 60px;
@@ -115,15 +128,22 @@ fieldset{
     font-weight: bold;
 }
 
-
-/* CSS for Food SEarch Section */
-
-.food-search{
+/* css for header section */
+.header{
     background-image: url(../images/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 7% 0;
+}
+
+/* CSS for Food SEarch Section */
+
+.food-search{
+    /* background-image: url(../images/bg.jpg); */
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    padding: 5% 0;
 }
 
 .food-search input[type="search"]{
@@ -138,10 +158,11 @@ fieldset{
 /* CSS for Categories */
 .categories{
     padding: 4% 0;
+    background-color: currentColor;
 }
 
 .box-3{
-    width: 28%;
+    width: 20%;
     float: left;
     margin: 2%;
 }

@@ -29,7 +29,7 @@
 
                     $food = $row['food'];
                     $price = $row['price'];
-                    $qty = $row['qty'];
+                    $qty = $row['quantity'];
                     $status = $row['status'];
                     $customer_name = $row['customer_name'];
                     $customer_contact = $row['customer_contact'];
@@ -45,7 +45,7 @@
             }
             else
             {
-                //REdirect to Manage ORder PAge
+                //REdirect to Manage ORder Page
                 header('location:'.SITEURL.'admin/manage-order.php');
             }
         

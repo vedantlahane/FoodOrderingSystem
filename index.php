@@ -1,5 +1,4 @@
-    <div class="header">    
-        <img src="../image/" alt="">
+    <div class="header">
         <?php include('partials-front/menu.php'); ?>
 
         <!-- fOOD sEARCH Section Starts Here -->

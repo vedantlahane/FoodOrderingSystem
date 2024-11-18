@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <!-- Important to make website responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Website</title>
+    <title>Mohan Chicken</title>
 
     <!-- Link our CSS file -->
     <link rel="stylesheet" href="css/style.css">
@@ -18,7 +18,8 @@
         <div class="container">
             <div class="logo">
                 <a href="#" title="Logo">
-                    <img src="images/logo.png" alt="Restaurant Logo" class="img-responsive">
+                    <strong>Mohan Chicken</strong>
+                    <!-- <img src="images/logo.png" alt="Restaurant Logo" class="img-responsive"> -->
                 </a>
             </div>
 
@@ -34,7 +35,10 @@
                         <a href="<?php echo SITEURL; ?>foods.php">Foods</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo SITEURL; ?>order.php">Order</a>
                     </li>
                 </ul>
             </div>

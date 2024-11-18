@@ -32,7 +32,7 @@ CREATE TABLE `admin_table` (
   `full_name` varchar(100) NOT NULL,
   `username` varchar(100) NOT NULL,
   `password` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+);
 
 --
 -- Dumping data for table `admin_table`
@@ -56,7 +56,7 @@ CREATE TABLE `category_table` (
   `image_name` varchar(255) NOT NULL,
   `featured` varchar(10) NOT NULL,
   `active` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+);
 
 --
 -- Dumping data for table `category_table`
@@ -83,7 +83,7 @@ CREATE TABLE `food_table` (
   `category_id` int(10) UNSIGNED NOT NULL,
   `featured` varchar(10) NOT NULL,
   `active` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+);
 
 --
 -- Dumping data for table `food_table`
@@ -115,7 +115,7 @@ CREATE TABLE `order_table` (
   `customer_contact` varchar(20) NOT NULL,
   `customer_email` varchar(150) NOT NULL,
   `customer_address` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+);
 
 --
 -- Dumping data for table `order_table`

@@ -18,8 +18,7 @@
         <div class="container">
             <div class="logo">
                 <a href="#" title="Logo">
-                    <strong>Mohan Chicken</strong>
-                    <!-- <img src="images/logo.png" alt="Restaurant Logo" class="img-responsive"> -->
+                    <h1 style="color:black;">Restron</h1>
                 </a>
             </div>
 

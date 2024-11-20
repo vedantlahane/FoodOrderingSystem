@@ -1,7 +1,7 @@
     
-    <?php include('partials-front/menu.php'); ?>
-
-    <?php 
+    <div class="header">
+        <?php include('partials-front/menu.php'); ?>
+        <?php 
         //CHeck whether id is passed or not
         if(isset($_GET['category_id']))
         {
@@ -40,7 +40,7 @@
 
 
     <!-- fOOD MEnu Section Starts Here -->
-    <section class="food-menu">
+    <section class="food-menu" style="background:none">
         <div class="container">
             <h2 class="text-center">Food Menu</h2>
 
@@ -121,4 +121,8 @@
     </section>
     <!-- fOOD Menu Section Ends Here -->
 
+    </div>
+   
+
+    
     <?php include('partials-front/footer.php'); ?>

@@ -17,16 +17,16 @@
     <section class="navbar">
         <div class="container">
             <div class="logo">
-                <a href="#" title="Logo">
-                    <h1 style="color:black;">Restron</h1>
+                <a href="<?php echo SITEURL;?>" title="Logo">
+                    <h1>Mohan Chicken</h1>
                 </a>
             </div>
 
             <div class="menu text-right">
                 <ul>
-                    <li>
+                    <!-- <li>
                         <a href="<?php echo SITEURL; ?>">Home</a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="<?php echo SITEURL; ?>categories.php">Categories</a>
                     </li>

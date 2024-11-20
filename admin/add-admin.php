@@ -11,7 +11,7 @@
                 echo $_SESSION['add'];
                 unset($_SESSION['add']);
             }
-        ?>
+        ?><!--This is the session variable that we created in add-admin.php-->
 
         <form action="" method="POST">
             <table class="tbl-30">

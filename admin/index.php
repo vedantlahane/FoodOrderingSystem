@@ -73,9 +73,9 @@ include('partials/login-check.php')?>
                 if ($res4) {
                     $row4 = mysqli_fetch_assoc($res4);
                     $total_revenue = $row4['Total'] ? $row4['Total'] : 0;
-                    echo "<h1>$" . number_format($total_revenue, 2) . "</h1>";
+                    echo "<h1>Rs " . number_format($total_revenue, 2) . "</h1>";
                 } else {
-                    echo "<h1>$0.00</h1>";
+                    echo "<h1>Rs 0.00</h1>";
                 }
             ?>
             <br />

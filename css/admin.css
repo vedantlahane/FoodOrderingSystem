@@ -1,19 +1,37 @@
 /* 
-    Author: Vijay Thapa;
+    Author: Vedant Lahane;
     Theme: Food Order Website Admin;
     Version: 1.0;
 */
 
+/* general  styles */
 *{
+
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    color: #333;
+
+}
 .wrapper{
     padding: 1%;
     width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+
+/* Headings */
+h1 {
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .text-center{
@@ -44,10 +62,12 @@ table tr td{
 
 .btn-primary{
     background-color: #1e90ff;
-    padding: 1%;
+    padding: 0.5em 1em;
     color: white;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 .btn-primary:hover{
     background-color: #3742fa;
@@ -55,73 +75,111 @@ table tr td{
 
 .btn-secondary{
     background-color: #7bed9f;
-    padding: 1%;
-    color: black;
+    padding: 0.5em 1em;
+    color: white;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 .btn-secondary:hover{
     background-color: #2ed573;
 }
 
 .btn-danger{
-    background-color: #ff6b81;
-    padding: 1%;
+    background-color: #fe6e83;
+    padding: 0.5em 1em;
     color: white;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 .btn-danger:hover{
-    background-color: #ff4757;
+    background-color: #fb0b0b;
 }
 
 .success{
     color: #2ed573;
+    font-weight: bold;
+    margin-bottom: 1em;
 }
 .error{
     color: #ff4757;
+    font-weight: bold;
+    margin-bottom: 1em;
 }
 
 
 /* CSS for Menu */
 .menu{
-    border-bottom: 1px solid grey;
+    /* border-bottom: 1px solid grey; */
+    background-color: #1e90ff;
+    color: white;
+    padding: 1em;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 .menu ul{
     list-style-type: none;
+    text-align: center;
 }
 .menu ul li{
-    display: inline;
+    display: inline-block;
     padding: 1%;
 }
-.menu ul li a{
+.menu ul li a {
     text-decoration: none;
+    color: white;
     font-weight: bold;
-    color: #ff6b81;
+    transition: color 0.3s ease;
 }
 .menu ul li a:hover{
-    color: #ff4757;
+    color: #ff501f;
 }
 
 /* CSS for main-content */
 .main-content{
-    background-color: #f1f2f6;
-    padding: 3% 0;
+    background-color: #ffffff;
+    padding: 2%;
+    margin:4rem;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .col-4{
     width: 18%;
-    background-color: white;
+    background-color: #ffffff;
     margin: 1%;
     padding: 2%;
     float: left;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.col-4 h1 {
+    font-size: 32px;
+    color: #0078D4;
+    margin-bottom: 10px;
+}
+.col-4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
 
 /* CSS for Footer */
-.footer{
-    background-color: #ff4757;
+.footer {
+    background-color: black;
     color: white;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #0078D4;
 }
 
 /* CSS for Login */
@@ -130,4 +188,18 @@ table tr td{
     width: 20%;
     margin: 10% auto;
     padding: 2%;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .col-4 {
+        width: 45%;
+        margin: 2.5%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }

@@ -1,10 +1,7 @@
-
+<div class="header">
 <?php include('partials-front/menu.php'); ?>
-
-
-
-    <!-- CAtegories Section Starts Here -->
-    <section class="categories">
+<!-- CAtegories Section Starts Here -->
+<section class="categories" style="background:none">
         <div class="container">
             <h2 class="text-center">Explore Foods</h2>
 
@@ -70,6 +67,12 @@
         </div>
     </section>
     <!-- Categories Section Ends Here -->
+</div>
+
+
+
+
+    
 
 
     <?php include('partials-front/footer.php'); ?>

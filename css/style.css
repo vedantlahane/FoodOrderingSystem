@@ -1,158 +1,162 @@
-/* 
-    Author: Vijay Thapa;
-    Theme: Restaurant Food Order;
-    version: 1.0;
-*/
+/* Author: Vedant Lahane */
+/* Theme: Restaurant Food Order */
+/* Version: 1.0 */
 
-/* CSS for All */
-*{
-    margin: 0 0;
-    padding: 0 0;
-    font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+:root {
+    --primary-color: #fe5816;
+    --secondary-color: #f20000;
+    --background-color: #000000;
+    --text-color-light: #ffffff;
+    --text-color-muted: #dce4f9;
 }
-.container{
-    width: 80%;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.great-vibes-regular {
+    font-family: "Great Vibes", cursive, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
     margin: 0 auto;
     padding: 1%;
 }
-.img-responsive{
-    width: 100%;
+
+img {
+    max-width: 100%;
+    height: auto;
 }
-.img-curve{
+
+.img-curve {
     border-radius: 15px;
 }
 
-.text-right{
+.text-right {
     text-align: right;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
-.text-left{
+
+.text-left {
     text-align: left;
     padding-left: 5%;
     font-weight: bold;
 }
-.text-white{
-    color: white;
+
+.text-white {
+    color: var(--text-color-light);
 }
 
-.clearfix{
-    clear: both;
-    float: none;
-}
-
-a{
-    /* color: ; */
-    color: #FEA116;
+a {
+    color: var(--text-color-light);
     text-decoration: none;
-}
-a:hover{
-    /* color: #ff4757; */
-    color: #fe5816;
+    transition: color 0.3s ease-in-out;
 }
 
-.btn{
+a:hover {
+    color: var(--secondary-color);
+}
+
+.btn {
     padding: 1%;
     border: none;
     font-size: 1rem;
     border-radius: 5px;
+    transition: all 0.3s ease-in-out;
 }
-.btn-primary{
-    background-color: #FEA116;
-    color: white;
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
     cursor: pointer;
 }
-.btn-primary:hover{
-    color: white;
-    background-color: #fe5816;
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
 }
-h2{
-    color: #2f3542;
-    font-size: 2rem;
+
+h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
     margin-bottom: 2%;
+    font-family: Great Vibes;
 }
-h3{
-    font-size: 1.5rem;
+
+h3 {
+    font-size: 1.25rem;
 }
-.float-container{
-    position: relative;
-}
-.float-text{
-    position: absolute;
-    bottom: 10;
-    height: 40px;
-    padding-top: 10px;
-    /* left: 35%; */
-    width: 100%;
-    background-color: rgba(170, 202, 242, 0.2);
-    backdrop-filter: blur(1px);
-}
-fieldset{
-    border: 1px solid white;
+
+fieldset {
+    border: 1px solid var(--text-color-light);
     margin: 5%;
     padding: 3%;
     border-radius: 5px;
 }
 
-.error{
+.error {
     padding: 2%;
     color: red;
 }
-.success{
+
+.success {
     padding: 2%;
     color: green;
 }
 
-
-/* CSSS for navbar section */
-
-.navbar{
-    background-color: rgba(170, 202, 242, 0.193);
-    backdrop-filter:blur(1px);
-    /* padding: %; */
+/* Navbar Section */
+.navbar {
+    background: radial-gradient(circle, #00000019, rgba(30, 29, 29, 0.751));
+    backdrop-filter: blur(1px);
     font-size: large;
-    /* color: #FEA116; */
 }
-.logo{
-    width: 10%;
-    float: left;
-    /* align-items: center;
-    justify-content: center; */
-    line-height: 40px;
 
-}
-.menu{
+.logo {
+    width: 30%;
+    float: left;
     line-height: 40px;
 }
-.menu ul{
+
+.logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-family: Great Vibes;
+}
+
+.menu ul {
     list-style-type: none;
 }
 
-.menu ul li{
+.menu ul li {
     display: inline;
     padding: 1%;
     font-weight: bold;
 }
 
-/* css for header section */
-.header{
-    /* background-image: url('../images/main-page.png'); */
+/* Header Section */
+.header {
     height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.995)), url('../images/main-page.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-    background: linear-gradient(rgba(0, 0, 0, 0.101), rgba(0, 0, 0, 0.995)), url('../images/main-page.png');
-    /* background: linear-gradient(rgba(89, 121, 201, 0.9), rgba(15, 23, 43, .9)), url(../images/main-page.png); */
+    background-position: center;
 }
 
-/* CSS for Food SEarch Section */
-
-.food-search{
+/* Food Search Section */
+.food-search {
     padding: 5% 0;
 }
 
-.food-search input[type="search"]{
+.food-search input[type="search"] {
     width: 50%;
     padding: 1%;
     font-size: 1rem;
@@ -160,70 +164,84 @@ fieldset{
     border-radius: 5px;
 }
 
-
-/* CSS for Categories */
-.categories{
+/* Categories Section */
+.categories {
     padding: 4% 0;
     background-color: currentColor;
 }
 
-.box-3{
+.box-3 {
     width: 20%;
     float: left;
     margin: 2%;
 }
 
-
-/* CSS for Food Menu */
-.food-menu{
-    background-color: #ececec;
+/* Food Menu Section */
+.food-menu {
+    background-color: var(--background-color);
     padding: 4% 0;
 }
-.food-menu-box{
+
+.food-menu-box {
     width: 43%;
     margin: 1%;
     padding: 2%;
     float: left;
-    background-color: white;
+    background: radial-gradient(circle, #f6e5de, #ffffff);
     border-radius: 15px;
 }
 
-.food-menu-img{
+.food-menu-img {
     width: 20%;
     float: left;
 }
 
-.food-menu-desc{
+.food-menu-desc {
     width: 70%;
     float: left;
     margin-left: 8%;
 }
 
-.food-price{
+.food-price {
     font-size: 1.2rem;
     margin: 2% 0;
 }
-.food-detail{
+
+.food-detail {
     font-size: 1rem;
-    color: #747d8c;
+    color: var(--text-color-muted);
 }
 
+/* Footer Section */
+.footer {
+    background-color: var(--background-color);
+    color: var(--text-color-light);
+    text-align: center;
+}
 
-/* CSS for Social */
-.social ul{
+/* Social Section */
+.social {
+    padding: 2% 0;
+    background-color: var(--background-color);
+}
+
+.social ul {
     list-style-type: none;
 }
-.social ul li{
+
+.social ul li {
     display: inline;
     padding: 1%;
 }
 
-/* for Order Section */
-.order{
+/* Order Section */
+.order {
     width: 50%;
     margin: 0 auto;
+    padding: 3% 5%;
 }
-.input-responsive{
+
+.input-responsive {
     width: 96%;
     padding: 1%;
     margin-bottom: 3%;
@@ -231,65 +249,56 @@ fieldset{
     border-radius: 5px;
     font-size: 1rem;
 }
-.order-label{
-    margin-bottom: 1%; 
+
+.order-label {
+    margin-bottom: 1%;
     font-weight: bold;
 }
 
-
-
-/* CSS for Mobile Size or Smaller Screen */
-
-@media only screen and (max-width:768px){
-    .logo{
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .logo {
         width: 80%;
-        float: none;
         margin: 1% auto;
     }
 
-    .menu ul{
-        text-align: center;
+    .menu ul {
+        display: none;
     }
 
-    .food-search input[type="search"]{
+    .menu.show ul {
+        display: block;
+        text-align: center;
+        background-color: var(--background-color);
+    }
+
+    .food-search input[type="search"] {
         width: 90%;
         padding: 2%;
         margin-bottom: 3%;
     }
 
-    .btn{
+    .btn {
         width: 91%;
         padding: 2%;
     }
 
-    .food-search{
-        padding: 10% 0;
-    }
-
-    .categories{
+    .categories {
         padding: 20% 0;
     }
-    h2{
-        margin-bottom: 10%;
-    }
-    .box-3{
+
+    .box-3 {
         width: 100%;
-        margin: 4% auto;
+        margin: 5% 0;
     }
 
-    .food-menu{
-        padding: 20% 0;
-    }
-
-    .food-menu-box{
+    .food-menu-box {
         width: 90%;
         padding: 5%;
         margin-bottom: 5%;
     }
-    .social{
-        padding: 5% 0;
-    }
-    .order{
+
+    .order {
         width: 100%;
     }
 }

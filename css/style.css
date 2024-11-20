@@ -216,10 +216,42 @@ fieldset {
 .footer {
     background-color: var(--background-color);
     color: var(--text-color-light);
-    text-align: center;
+    /* text-align: center; */
+    padding: 2rem;
+    /* border-top: 2px solid var(--primary-color); */
+    /* margin: 4rem; */
+    
+}
+.footer .container {
+    display: flex;
+    font-size: 1.1rem;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
 }
 
-/* Social Section */
+.footer .container .one{
+    width: 25%;
+    margin: 1rem;
+}
+.footer .container .two{
+    width: 25%;
+    margin: 1rem;
+}
+.footer .container .three{
+    width: 25%;
+    margin: 1rem;
+}
+.footer .container .four{
+    width: 25%;
+    margin: 1rem;
+}
+
+.footer .rights{
+    font-size: 1.2rem;
+    margin: 1rem;
+    text-align: center;
+}
+/* Social Section
 .social {
     padding: 2% 0;
     background-color: var(--background-color);
@@ -232,7 +264,7 @@ fieldset {
 .social ul li {
     display: inline;
     padding: 1%;
-}
+} */
 
 /* Order Section */
 .order {

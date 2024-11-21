@@ -27,14 +27,14 @@
         </div>
         <div class="two">
             <p>
-                <strong>About Us:</strong> At Gourmet Delight, we serve freshly prepared dishes made with high-quality ingredients, bringing culinary joy to your plate. We value your dining experience and strive for excellence in every bite!
+                <strong>About Us:</strong> At Mohan Chicken, we serve freshly prepared dishes made with high-quality ingredients, bringing culinary joy to your plate. We value your dining experience and strive for excellence in every bite!
             </p>
         </div>
-        <div class="three">
+        <!-- <div class="three">
             <p>
-                <strong>About Us:</strong> At Gourmet Delight, we serve freshly prepared dishes made with high-quality ingredients, bringing culinary joy to your plate. We value your dining experience and strive for excellence in every bite!
+                <strong>About Us:</strong> At Mohan Chicken, we serve freshly prepared dishes made with high-quality ingredients, bringing culinary joy to your plate. We value your dining experience and strive for excellence in every bite!
             </p>
-        </div>
+        </div> -->
         <div class="four">
             <p>
                 <strong>Designed and Developed By:</strong> Vedant Lahane<br>

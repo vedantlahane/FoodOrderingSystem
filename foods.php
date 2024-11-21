@@ -61,7 +61,7 @@
 
                     <div class="food-menu-desc">
                         <h4><?php echo $title; ?></h4>
-                        <p class="food-price">$<?php echo $price; ?></p>
+                        <p class="food-price">Rs. <?php echo $price; ?></p>
                         <p class="food-detail">
                             <?php echo $description; ?>
                         </p>
@@ -69,11 +69,11 @@
 
                         <form action="<?php echo SITEURL; ?>order.php" method="GET">
                             <input type="hidden" name="food_id" value="<?php echo $id; ?>">
-                            <select name="order_type" class="btn btn-primary">
+                            <!-- <select name="order_type" class="btn btn-primary">
                                 <option value="dine_in">Dine In</option>
                                 <option value="delivery">Delivery</option>
                                 <option value="pick_up">Pick Up</option>
-                            </select>
+                            </select> -->
                             <input type="submit" value="Order Now" class="btn btn-primary">
                         </form>
                     </div>

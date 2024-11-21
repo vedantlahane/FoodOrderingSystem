@@ -147,7 +147,7 @@
 
                 //Update the Values
                 $sql2 = "UPDATE order_table SET 
-                    qty = $qty,
+                    quantity = $qty,
                     total = $total,
                     status = '$status',
                     customer_name = '$customer_name',

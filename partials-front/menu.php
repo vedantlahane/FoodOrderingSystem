@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <!-- Important to make website responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohan Chicken</title>
+    <title>Restron</title>
 
     <!-- Link our CSS file -->
     <link rel="stylesheet" href="css/style.css">
@@ -15,10 +15,10 @@
 <body>
     <!-- Navbar Section Starts Here -->
     <section class="navbar">
-        <div class="container">
+        <div class="container" style="display: inline;">
             <div class="logo">
                 <a href="<?php echo SITEURL;?>" title="Logo">
-                    <h1>Mohan Chicken</h1>
+                    <h1>Restron</h1>
                 </a>
             </div>
 

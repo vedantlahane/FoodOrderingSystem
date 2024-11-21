@@ -11,9 +11,18 @@
 
             </div>
         </section>
-            <!-- fOOD sEARCH Section Ends Here -->
+        <!-- fOOD sEARCH Section Ends Here -->
+        <div class="highlights">
+            <div class="container">
+                
+                <h1>Welcome to our website! Try our special <span>Mohan Chicken,</span> a delicious and spicy dish that will tantalize your taste buds. Order now and enjoy the best culinary experience!</h1>
 
+            </div>
+        </div>
     </div>
+
+
+    <!-- CAtegories Section Starts Here -->
 
 
     <?php
@@ -30,7 +39,7 @@
 
             <?php
             //Create SQL Query to Display CAtegories from Database (LIMIT 3 removed)
-            $sql = "SELECT * FROM category_table WHERE active='Yes' AND featured='Yes' ";//(LIMIT 3 removed)
+            $sql = "SELECT * FROM category_table WHERE active='Yes' AND featured='Yes' "; //(LIMIT 3 removed)
             //Execute the Query
             $res = mysqli_query($conn, $sql);
             //Count rows to check whether the category is available or not
@@ -44,9 +53,9 @@
                     $title = $row['title'];
                     $image_name = $row['image_name'];
             ?>
-
+                
                     <a href="<?php echo SITEURL; ?>category-foods.php?category_id=<?php echo $id; ?>">
-                        <div class="box-3 float-container">
+                        <div class="box-3 float-container" style="max-width: 400px; max-height: 500px;">
                             <?php
                             //Check whether Image is available or not
                             if ($image_name == "") {
@@ -84,6 +93,7 @@
     <!-- fOOD MEnu Section Starts Here -->
     <section class="food-menu">
         <div class="container">
+
             <h2 class="text-left">Food Menu</h2>
 
             <?php
@@ -128,13 +138,13 @@
                         </div>
 
                         <div class="food-menu-desc">
-                            <h4><?php echo $title; ?></h4>
-                            <p class="food-price">$<?php echo $price; ?></p>
+                            <h4 ><?php echo $title; ?></h4>
+                            <p class="food-price">Rs. <?php echo $price; ?></p>
                             <p class="food-detail">
                                 <?php echo $description; ?>
                             </p>
                             <br>
-                        
+
                             <a href="<?php echo SITEURL; ?>order.php?food_id=<?php echo $id; ?>" class="btn btn-primary">Add</a><!--Add to Cart-->
                         </div>
                     </div>
